@@ -1,6 +1,8 @@
-const async = require(".")
+import async from './index.js'
 // 可以使用自定义的Promise替换原生的Promise
-global.Promise = require("promise")
+import Promise from 'promise'
+
+global.Promise = Promise
 
 const f1 = async(function* (a, b, c) {
   let x = yield a

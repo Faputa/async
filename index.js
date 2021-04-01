@@ -4,11 +4,11 @@
 function async(generator) {
   return function (...args) {
     return new Promise(function (resolve, reject) {
-      let g = generator(...args)
+      const g = generator(...args)
       function next(val) {
         try {
-          let result = g.next(val)
-          let value = result.value
+          const result = g.next(val)
+          const value = result.value
           if (result.done) {
             resolve(value)
           } else {
@@ -23,4 +23,4 @@ function async(generator) {
   }
 }
 
-module.exports = async;
+export default async;

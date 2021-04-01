@@ -1,6 +1,6 @@
-const async = require(".")
+import async from './index.js'
 // 可以使用自定义的Promise替换原生的Promise
-global.Promise = require("promise")
+import Promise from 'promise'
 
 function resolveAfter2Seconds(x) {
   return new Promise(resolve => {

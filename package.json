@@ -2,7 +2,8 @@
   "name": "async",
   "version": "1.0.0",
   "description": "my async impl",
-  "repository": "https://github.com/fpure/async",
+  "repository": "https://github.com/refcell/async",
+  "type": "module",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
@@ -10,9 +11,9 @@
     "test1": "node test1",
     "test2": "node test2"
   },
-  "author": "fpure",
+  "author": "refcell",
   "license": "MIT",
   "devDependencies": {
-    "promise": "github:fpure/promise"
+    "promise": "github:refcell/promise"
   }
 }
